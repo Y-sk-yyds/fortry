@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.fortry.mapper.UserMapper">
+    <!-- 你的 SQL 写在这里 -->
+    <select id="getOrderStatus" resultType="java.util.HashMap">
+        select u.id,u.username,count(o.id) as sum
+        from user u
+        left join orders o on u.id=o.user_id
+        <where>
+            <if test="age!=null">
+                and u.age=#{age}
+            </if>
+        </where>
+        group by u.id,u.username
+    </select>
+</mapper>
