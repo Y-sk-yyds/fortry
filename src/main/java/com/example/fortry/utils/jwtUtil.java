@@ -14,7 +14,7 @@ import java.util.Date;
 public class jwtUtil {
     private static final Key key = Keys.hmacShaKeyFor("mySecretKey123456789012345678901234123456478979879".getBytes());
 //    private static final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
-    private static final long EXPIRATION_TIME = 300000L;
+    private static final long EXPIRATION_TIME = 8600000L;
 
     public static String generateToken(String username) {
         return Jwts

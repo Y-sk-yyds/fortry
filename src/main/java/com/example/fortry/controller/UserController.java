@@ -3,6 +3,7 @@ package com.example.fortry.controller;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.fortry.common.Result;
+import com.example.fortry.dto.RegisterInfoDTO;
 import com.example.fortry.dto.UserLoginDTO;
 import com.example.fortry.entity.User;
 import com.example.fortry.exception.BusinessException;
@@ -33,7 +34,14 @@ public class UserController {
 
         return Result.success(token);
     }
-    @GetMapping("/seleteperson")
+    @PostMapping("/register")
+    public Result<String> register(@RequestBody RegisterInfoDTO dto){
+        User user=new User(dto.getUsername(), dto.getPassword(),dto.getAge());
+        int f=userMapper.insert(user);
+        System.out.println("look ! this is: "+f+"\n");
+        return Result.success("created!");
+    }
+    @GetMapping("/select/person")
     public Result<User> selectByName(@RequestParam String username)
     {
         QueryWrapper<User> wrapper=new QueryWrapper();

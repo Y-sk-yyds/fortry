@@ -12,7 +12,7 @@ public class OrderController {
 
     @Autowired
     private OrderService orderService;
-    @GetMapping("/ordercreate")
+    @GetMapping("/order/create")
     public Result<String> buyorder(@RequestParam Long userId,@RequestParam long amount){
         orderService.createOrder(userId,amount);
         return Result.success("下单成功!");
