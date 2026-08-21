@@ -15,6 +15,12 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(intercepter)
                 .addPathPatterns("/**")//拦下所有接口
-                .excludePathPatterns("/login","/register");//要方形的的接口
+                .excludePathPatterns(
+                        "/login",
+                        "/register",
+                        "/doc.html",
+                        "/v3/api-docs/**",
+                        "/swagger-ui/**",
+                        "/webjars/**");//要方形的的接口
     }
 }
