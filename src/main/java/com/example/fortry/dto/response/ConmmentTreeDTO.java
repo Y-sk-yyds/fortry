@@ -1,4 +1,4 @@
-package com.example.fortry.dto;
+package com.example.fortry.dto.response;
 
 import lombok.Data;
 

@@ -1,6 +1,6 @@
 package com.example.fortry.utils;
 
-import com.example.fortry.dto.ConmmentTreeDTO;
+import com.example.fortry.dto.response.ConmmentTreeDTO;
 import com.example.fortry.entity.Conmment;
 
 import java.util.ArrayList;

@@ -1,90 +1,124 @@
-2026-08-22T11:16:05.544+08:00  INFO 10104 --- [main] com.example.fortry.FortryApplication     : Starting FortryApplication using Java 18 with PID 10104 (D:\fortry\target\classes started by 19919 in D:\fortry)
-2026-08-22T11:16:05.554+08:00  INFO 10104 --- [main] com.example.fortry.FortryApplication     : No active profile set, falling back to 1 default profile: "default"
-2026-08-22T11:16:07.380+08:00  INFO 10104 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-08-22T11:16:07.401+08:00  INFO 10104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-22T11:16:07.402+08:00  INFO 10104 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-08-22T11:16:07.481+08:00  INFO 10104 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1854 ms
-2026-08-22T11:16:08.805+08:00  WARN 10104 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-09-05T20:10:10.434+08:00  INFO 4172 --- [main] com.example.fortry.FortryApplication     : Starting FortryApplication using Java 18 with PID 4172 (D:\fortry\target\classes started by 19919 in D:\fortry)
+2026-09-05T20:10:10.442+08:00  INFO 4172 --- [main] com.example.fortry.FortryApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-05T20:10:12.337+08:00  INFO 4172 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-05T20:10:12.359+08:00  INFO 4172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-05T20:10:12.360+08:00  INFO 4172 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-05T20:10:12.445+08:00  INFO 4172 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1926 ms
+2026-09-05T20:10:13.872+08:00  WARN 4172 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 70459781-5aa4-4049-87c6-5a6236c2d4a2
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-08-22T11:16:08.815+08:00  INFO 10104 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-08-22T11:16:09.269+08:00  INFO 10104 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e11485
-2026-08-22T11:16:09.561+08:00  INFO 10104 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-08-22T11:16:09.569+08:00  INFO 10104 --- [main] com.example.fortry.FortryApplication     : Started FortryApplication in 4.751 seconds (process running for 5.706)
-2026-08-22T11:16:09.572+08:00  WARN 10104 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-08-22T11:16:09.573+08:00  WARN 10104 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-08-22T11:16:43.879+08:00  INFO 10104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-08-22T11:16:43.880+08:00  INFO 10104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-08-22T11:16:43.881+08:00  INFO 10104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-08-22T11:16:44.050+08:00  INFO 10104 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 1787368604049 开始 
-2026-08-22T11:16:44.166+08:00  INFO 10104 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-22T11:16:44.371+08:00  INFO 10104 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40c2e35a
-2026-08-22T11:16:44.373+08:00  INFO 10104 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-22T11:16:44.523+08:00  INFO 10104 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 1787368604521 结束，耗时：472
-2026-08-22T11:19:22.785+08:00  INFO 10104 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-08-22T11:19:23.655+08:00  INFO 10104 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-08-22T11:19:23.661+08:00  INFO 10104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-22T11:19:23.670+08:00  INFO 10104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-08-22T11:19:28.339+08:00  INFO 17100 --- [main] com.example.fortry.FortryApplication     : Starting FortryApplication using Java 18 with PID 17100 (D:\fortry\target\classes started by 19919 in D:\fortry)
-2026-08-22T11:19:28.343+08:00  INFO 17100 --- [main] com.example.fortry.FortryApplication     : No active profile set, falling back to 1 default profile: "default"
-2026-08-22T11:19:30.102+08:00  INFO 17100 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-08-22T11:19:30.119+08:00  INFO 17100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-22T11:19:30.120+08:00  INFO 17100 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-08-22T11:19:30.196+08:00  INFO 17100 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1784 ms
-2026-08-22T11:19:31.475+08:00  WARN 17100 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 17aae364-2277-4afe-bb7f-cdc009b99448
+Using generated security password: d52ea983-0cb0-4604-b085-bc7a1ee68665
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-08-22T11:19:31.484+08:00  INFO 17100 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-08-22T11:19:31.910+08:00  INFO 17100 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c7fd41f
-2026-08-22T11:19:32.197+08:00  INFO 17100 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-08-22T11:19:32.205+08:00  INFO 17100 --- [main] com.example.fortry.FortryApplication     : Started FortryApplication in 4.441 seconds (process running for 5.271)
-2026-08-22T11:19:32.208+08:00  WARN 17100 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-08-22T11:19:32.208+08:00  WARN 17100 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-08-22T11:19:41.581+08:00  INFO 17100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-08-22T11:19:41.582+08:00  INFO 17100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-08-22T11:19:41.583+08:00  INFO 17100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-08-22T11:19:41.741+08:00  INFO 17100 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 1787368781740==================== 开始 =====================
-2026-08-22T11:19:41.845+08:00  INFO 17100 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-22T11:19:42.038+08:00  INFO 17100 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ec26564
-2026-08-22T11:19:42.041+08:00  INFO 17100 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-22T11:19:42.180+08:00  INFO 17100 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : ====================1787368782179 结束，耗时：439====================
-2026-08-22T11:20:46.547+08:00  INFO 17100 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-08-22T11:20:47.310+08:00  INFO 17100 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-08-22T11:20:47.315+08:00  INFO 17100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-22T11:20:47.323+08:00  INFO 17100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-08-22T11:20:51.863+08:00  INFO 25608 --- [main] com.example.fortry.FortryApplication     : Starting FortryApplication using Java 18 with PID 25608 (D:\fortry\target\classes started by 19919 in D:\fortry)
-2026-08-22T11:20:51.867+08:00  INFO 25608 --- [main] com.example.fortry.FortryApplication     : No active profile set, falling back to 1 default profile: "default"
-2026-08-22T11:20:53.603+08:00  INFO 25608 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-08-22T11:20:53.624+08:00  INFO 25608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-22T11:20:53.624+08:00  INFO 25608 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-08-22T11:20:53.700+08:00  INFO 25608 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1765 ms
-2026-08-22T11:20:54.989+08:00  WARN 25608 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-09-05T20:10:13.883+08:00  INFO 4172 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-05T20:10:14.346+08:00  INFO 4172 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f9be66c
+2026-09-05T20:10:14.640+08:00  INFO 4172 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-05T20:10:14.649+08:00  INFO 4172 --- [main] com.example.fortry.FortryApplication     : Started FortryApplication in 4.863 seconds (process running for 5.877)
+2026-09-05T20:10:14.653+08:00  WARN 4172 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-05T20:10:14.654+08:00  WARN 4172 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-05T20:10:38.429+08:00  INFO 4172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-05T20:10:38.430+08:00  INFO 4172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-05T20:10:38.431+08:00  INFO 4172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-05T20:10:38.505+08:00  INFO 4172 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 
+============================1788610238505开始 ==============================
+2026-09-05T20:10:38.581+08:00  INFO 4172 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-05T20:10:38.775+08:00  INFO 4172 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ae87dc0
+2026-09-05T20:10:38.778+08:00  INFO 4172 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-05T20:10:38.856+08:00  INFO 4172 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 
+====================1788610238855 结束，耗时：350====================
+2026-09-05T20:11:15.394+08:00  INFO 4172 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-05T20:11:16.314+08:00  INFO 4172 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-05T20:11:16.321+08:00  INFO 4172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-05T20:11:16.334+08:00  INFO 4172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-05T20:17:35.285+08:00  INFO 33384 --- [main] com.example.fortry.FortryApplication     : Starting FortryApplication using Java 18 with PID 33384 (D:\fortry\target\classes started by 19919 in D:\fortry)
+2026-09-05T20:17:35.289+08:00  INFO 33384 --- [main] com.example.fortry.FortryApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-05T20:17:37.161+08:00  INFO 33384 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-05T20:17:37.184+08:00  INFO 33384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-05T20:17:37.185+08:00  INFO 33384 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-05T20:17:37.270+08:00  INFO 33384 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1908 ms
+2026-09-05T20:17:38.656+08:00  WARN 33384 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: f021424d-c2bf-4eab-b4ea-1d4811bb1d91
+Using generated security password: a7d70746-b261-4178-8f7e-caedaa9f95ab
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-08-22T11:20:54.998+08:00  INFO 25608 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-08-22T11:20:55.424+08:00  INFO 25608 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f9be66c
-2026-08-22T11:20:55.713+08:00  INFO 25608 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-08-22T11:20:55.722+08:00  INFO 25608 --- [main] com.example.fortry.FortryApplication     : Started FortryApplication in 4.427 seconds (process running for 5.196)
-2026-08-22T11:20:55.725+08:00  WARN 25608 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-08-22T11:20:55.726+08:00  WARN 25608 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-08-22T11:20:59.809+08:00  INFO 25608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-08-22T11:20:59.810+08:00  INFO 25608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-08-22T11:20:59.811+08:00  INFO 25608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-08-22T11:20:59.969+08:00  INFO 25608 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : /n============================1787368859968开始 ==============================
-2026-08-22T11:21:00.077+08:00  INFO 25608 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-22T11:21:00.257+08:00  INFO 25608 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b78e3fc
-2026-08-22T11:21:00.259+08:00  INFO 25608 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-22T11:21:00.414+08:00  INFO 25608 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : /n====================1787368860412 结束，耗时：444====================
-2026-08-22T11:21:18.441+08:00  INFO 25608 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-08-22T11:21:19.210+08:00  INFO 25608 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-08-22T11:21:19.215+08:00  INFO 25608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-22T11:21:19.224+08:00  INFO 25608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-05T20:17:38.665+08:00  INFO 33384 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-05T20:17:39.095+08:00  INFO 33384 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@a8e6492
+2026-09-05T20:17:39.394+08:00  INFO 33384 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-05T20:17:39.402+08:00  INFO 33384 --- [main] com.example.fortry.FortryApplication     : Started FortryApplication in 4.693 seconds (process running for 5.55)
+2026-09-05T20:17:39.405+08:00  WARN 33384 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-05T20:17:39.405+08:00  WARN 33384 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-05T20:17:44.341+08:00  INFO 33384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-05T20:17:44.342+08:00  INFO 33384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-05T20:17:44.343+08:00  INFO 33384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-05T20:17:44.394+08:00  INFO 33384 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 
+============================1788610664394开始 ==============================
+2026-09-05T20:17:44.500+08:00  INFO 33384 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-05T20:17:44.678+08:00  INFO 33384 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14c323b5
+2026-09-05T20:17:44.681+08:00  INFO 33384 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-05T20:18:59.217+08:00  INFO 33384 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-05T20:19:00.123+08:00  INFO 33384 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-05T20:19:00.129+08:00  INFO 33384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-05T20:19:00.136+08:00  INFO 33384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-05T20:19:05.671+08:00  INFO 38724 --- [main] com.example.fortry.FortryApplication     : Starting FortryApplication using Java 18 with PID 38724 (D:\fortry\target\classes started by 19919 in D:\fortry)
+2026-09-05T20:19:05.676+08:00  INFO 38724 --- [main] com.example.fortry.FortryApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-05T20:19:07.318+08:00  INFO 38724 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-05T20:19:07.336+08:00  INFO 38724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-05T20:19:07.337+08:00  INFO 38724 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-05T20:19:07.408+08:00  INFO 38724 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1670 ms
+2026-09-05T20:19:08.708+08:00  WARN 38724 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f17d9d3e-a276-469d-89ff-9d19499ae01e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-05T20:19:08.717+08:00  INFO 38724 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-05T20:19:09.136+08:00  INFO 38724 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c7fd41f
+2026-09-05T20:19:09.414+08:00  INFO 38724 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-05T20:19:09.422+08:00  INFO 38724 --- [main] com.example.fortry.FortryApplication     : Started FortryApplication in 4.304 seconds (process running for 5.112)
+2026-09-05T20:19:09.425+08:00  WARN 38724 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-05T20:19:09.425+08:00  WARN 38724 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-05T20:19:15.108+08:00  INFO 38724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-05T20:19:15.108+08:00  INFO 38724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-05T20:19:15.109+08:00  INFO 38724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-05T20:19:15.167+08:00  INFO 38724 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 
+============================1788610755167开始 ==============================
+2026-09-05T20:19:15.260+08:00  INFO 38724 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-05T20:19:15.447+08:00  INFO 38724 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26087d09
+2026-09-05T20:19:15.450+08:00  INFO 38724 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-05T20:20:16.833+08:00  INFO 38724 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-05T20:20:17.766+08:00  INFO 38724 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-05T20:20:17.772+08:00  INFO 38724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-05T20:20:17.780+08:00  INFO 38724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-05T20:20:22.803+08:00  INFO 40484 --- [main] com.example.fortry.FortryApplication     : Starting FortryApplication using Java 18 with PID 40484 (D:\fortry\target\classes started by 19919 in D:\fortry)
+2026-09-05T20:20:22.807+08:00  INFO 40484 --- [main] com.example.fortry.FortryApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-05T20:20:24.545+08:00  INFO 40484 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-05T20:20:24.563+08:00  INFO 40484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-05T20:20:24.564+08:00  INFO 40484 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-05T20:20:24.639+08:00  INFO 40484 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1769 ms
+2026-09-05T20:20:26.004+08:00  WARN 40484 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 992f036c-675f-42c8-a169-8b04fb3c0815
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-05T20:20:26.012+08:00  INFO 40484 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-05T20:20:26.451+08:00  INFO 40484 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c7fd41f
+2026-09-05T20:20:26.753+08:00  INFO 40484 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-05T20:20:26.761+08:00  INFO 40484 --- [main] com.example.fortry.FortryApplication     : Started FortryApplication in 4.524 seconds (process running for 5.327)
+2026-09-05T20:20:26.764+08:00  WARN 40484 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-05T20:20:26.765+08:00  WARN 40484 --- [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-05T20:20:34.645+08:00  INFO 40484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-05T20:20:34.646+08:00  INFO 40484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-05T20:20:34.647+08:00  INFO 40484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-05T20:20:34.699+08:00  INFO 40484 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 
+============================1788610834698开始 ==============================
+2026-09-05T20:20:34.802+08:00  INFO 40484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-05T20:20:34.979+08:00  INFO 40484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@607c16ad
+2026-09-05T20:20:34.981+08:00  INFO 40484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-05T20:20:35.061+08:00  INFO 40484 --- [http-nio-8080-exec-1] com.example.fortry.aspect.LogAspect      : 
+====================1788610835060 结束，耗时：362====================
+2026-09-05T20:22:14.971+08:00  INFO 40484 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-05T20:22:15.866+08:00  INFO 40484 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-05T20:22:15.872+08:00  INFO 40484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-05T20:22:15.878+08:00  INFO 40484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

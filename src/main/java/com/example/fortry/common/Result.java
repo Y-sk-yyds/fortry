@@ -1,7 +1,5 @@
 package com.example.fortry.common;
 
-import com.example.fortry.dto.UserLoginDTO;
-import com.example.fortry.entity.User;
 import lombok.Data;
 
 @Data
@@ -20,9 +18,7 @@ public class Result<T> {
         return new Result<>(200,"success",data);
     }
 
-    public static <T>Result<T> success(String msg){
-        return new Result<>(200,msg,null);
-    }
+    public static <T>Result<T> success(String msg){return new Result<>(200,msg,null);}
 
     public static <T>Result<T> success(){
         return success(null);

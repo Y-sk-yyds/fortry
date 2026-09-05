@@ -14,7 +14,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(intercepter)
-                .addPathPatterns("/**")//拦下所有接口
+                .addPathPatterns("")//拦下所有接口"/**"
                 .excludePathPatterns(
                         "/login",
                         "/register",

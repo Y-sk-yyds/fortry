@@ -3,13 +3,19 @@ package com.example.fortry.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
 @TableName("`orders`")
 public class Order {
-    private int id;
+    private Long id;
     private long userId;
-    private long amount;
+    private BigDecimal amount;
     private LocalDateTime createTime=LocalDateTime.now();
+
+    public Order(long userId, BigDecimal amount) {
+        this.userId = userId;
+        this.amount = amount;
+    }
 }

@@ -1,6 +1,4 @@
-package com.example.fortry.dto;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+package com.example.fortry.dto.request;
 import lombok.Data;
 
 @Data
